@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DengueCare - Login</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>DengueCare Login</h1>
+    </center>
+
+    <p align="center">
+        <a href="../../Homepage/View/home.html">Home</a> |
+        <a href="../../Register/View/home.html">Register</a>
+    </p>
+
+    <hr>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Account Details</legend>
+
+            <p>
+                <label for="username">Username or Email:</label>
+                <input type="text" id="username" name="username" required>
+            </p>
+
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </p>
+
+            <p>
+                <label for="role">Account Type:</label>
+                <select id="role" name="role" required>
+                    <option value="">Select</option>
+                    <option>Patient / User</option>
+                    <option>Doctor</option>
+                    <option>Health Worker</option>
+                    <option>Approved Admin</option>
+                </select>
+            </p>
+
+            <center>
+                <input type="submit" value="Login">
+                <input type="reset" value="Reset">
+            </center>
+
+        </fieldset>
+
+    </form>
+
+    <p align="center">
+        Need admin access?
+        <a href="../../Register/View/admin-access-request.html">Request Admin Access</a>
+    </p>
+
+    <p align="center">Authentication requires backend support.</p>
+
+</body>
+</html>
