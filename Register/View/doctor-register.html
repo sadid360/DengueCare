@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DengueCare - Doctor Registration</title>
+</head>
+
+<body>
+
+    <center>
+        <h2>Doctor Registration</h2>
+    </center>
+
+    <p align="center">
+        <a href="home.html">Registration Options</a> |
+        <a href="../../Homepage/View/home.html">Home</a> |
+        <a href="../../Login/View/home.html">Login</a>
+    </p>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <p>
+                <label for="fullname">Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+
+            <p>
+                <label>Gender:</label>
+
+                <input type="radio" id="gender_male" name="gender" value="Male">
+                <label for="gender_male">Male</label>
+
+                <input type="radio" id="gender_female" name="gender" value="Female">
+                <label for="gender_female">Female</label>
+
+                <input type="radio" id="gender_other" name="gender" value="Other">
+                <label for="gender_other">Other</label>
+            </p>
+
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </p>
+
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </p>
+
+            <p>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" cols="30"></textarea>
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Professional Information</legend>
+
+            <p>
+                <label for="degree">Medical Degree:</label>
+                <select id="degree" name="degree" required>
+                    <option value="">Select</option>
+                    <option>MBBS</option>
+                    <option>BDS</option>
+                    <option>Other</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="specialization">Specialization:</label>
+                <input type="text" id="specialization" name="specialization" required>
+            </p>
+
+            <p>
+                <label for="bmdc">BMDC Registration Number:</label>
+                <input type="text" id="bmdc" name="bmdc" required>
+            </p>
+
+            <p>
+                <label for="experience">Years of Experience:</label>
+                <input type="number" id="experience" name="experience">
+            </p>
+
+            <p>
+                <label for="institution">Medical Institution:</label>
+                <input type="text" id="institution" name="institution">
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Workplace & Availability</legend>
+
+            <p>
+                <label for="workplace">Hospital / Clinic:</label>
+                <input type="text" id="workplace" name="workplace" required>
+            </p>
+
+            <p>
+                <label for="chamber">Chamber Address:</label>
+                <textarea id="chamber" name="chamber" rows="3" cols="30"></textarea>
+            </p>
+
+            <p>
+                <label for="consultation">Consultation Type:</label>
+                <select id="consultation" name="consultation">
+                    <option value="">Select</option>
+                    <option>In-person</option>
+                    <option>Online</option>
+                    <option>Both</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="days">Available Days:</label>
+                <input type="text" id="days" name="days">
+            </p>
+
+            <p>
+                <label for="hours">Available Hours:</label>
+                <input type="text" id="hours" name="hours">
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Account Details</legend>
+
+            <p>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </p>
+
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Confirmation</legend>
+
+            <p>
+                <input type="checkbox" id="declaration" name="declaration" required>
+                <label for="declaration">
+                    I confirm that the information provided is accurate.
+                </label>
+            </p>
+
+            <center>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </center>
+
+        </fieldset>
+
+    </form>
+
+    <p align="center">
+        Doctor details should be verified before account activation.
+        Backend support is required.
+    </p>
+
+</body>
+</html>
