@@ -1,0 +1,567 @@
+```css
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* General Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 248, 248);
+    color: rgb(51, 51, 51);
+    margin: 20px;
+    padding-top: 100px;
+    font-size: 16px;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Fixed Heading and Navigation */
+.fixed-heading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(240, 248, 248);
+    color: rgb(51, 51, 51);
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgb(180, 190, 190);
+    box-sizing: border-box;
+}
+
+/* Fixed Main Heading */
+.fixed-heading h1,
+.fixed-heading h2 {
+    color: rgb(8, 127, 140);
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0 0 0;
+}
+
+/* Fixed Subtitle */
+.fixed-heading p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 10px 0;
+}
+
+/* Fixed Navigation Links */
+.fixed-heading .navigation {
+    display: block;
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 20px 10px 0;
+}
+
+/* Navigation and General Links */
+a {
+    color: rgb(8, 127, 140);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    transition: color 0.3s;
+}
+
+/* Link Hover */
+a:hover {
+    color: rgb(230, 57, 70);
+    text-decoration: underline;
+}
+
+/* Main Headings */
+h1 {
+    color: rgb(8, 127, 140);
+}
+
+h2 {
+    color: rgb(21, 145, 155);
+}
+
+/* Paragraph */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Form Position and Responsive Width */
+form {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+/* Fieldset */
+fieldset {
+    display: block;
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(180, 220, 220);
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(210, 220, 220);
+    box-sizing: border-box;
+    overflow: auto;
+    overflow-wrap: anywhere;
+}
+
+/* Fieldset Inside Form */
+form fieldset {
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Legend */
+legend {
+    color: rgb(8, 127, 140);
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+/* Table */
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/* Table Cells */
+td {
+    padding: 8px;
+    overflow-wrap: anywhere;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-size: 15px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+input[type="time"],
+input[type="url"],
+input[type="file"],
+select,
+textarea {
+    display: block;
+    width: 95%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 8px;
+    border: 1px solid rgb(180, 190, 195);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* Input Focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="file"]:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid rgb(143, 188, 143);
+    outline-offset: 1px;
+}
+
+/* Checkbox and Radio Buttons */
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 5px;
+}
+
+/* ID Selector */
+#fullname {
+    max-width: 100%;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+    overflow: auto;
+}
+
+/* Submit and Reset Buttons */
+input[type="submit"],
+input[type="reset"] {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: rgb(8, 127, 140);
+    color: rgb(255, 255, 255);
+}
+
+/* Reset Button */
+input[type="reset"] {
+    background-color: rgb(220, 230, 230);
+    color: rgb(51, 51, 51);
+}
+
+/* Submit Button Hover */
+input[type="submit"]:hover {
+    background-color: rgb(5, 95, 105);
+}
+
+/* Submit Button Click */
+input[type="submit"]:active {
+    background-color: rgb(3, 75, 85);
+    transform: translateY(2px);
+}
+
+/* Reset Button Hover */
+input[type="reset"]:hover {
+    background-color: rgb(190, 205, 205);
+}
+
+/* Reset Button Click */
+input[type="reset"]:active {
+    background-color: rgb(170, 190, 190);
+    transform: translateY(2px);
+}
+
+/* Horizontal Line */
+hr {
+    border: 1px solid rgb(21, 145, 155);
+}
+
+/* Images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Flexbox Container */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Flexbox Items */
+.flex-container > * {
+    min-width: 0;
+    max-width: 100%;
+}
+
+/* Grid Layout */
+.destination-grid,
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 20px;
+}
+
+/* Account Grid */
+.account-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 20px;
+}
+
+/* Shared Panels and Cards */
+.panel,
+.account-card,
+.form-section,
+.destination-card {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(210, 220, 220);
+    padding: 18px;
+    margin-bottom: 20px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+/* Account Card */
+.account-card {
+    min-height: 310px;
+    margin: 0;
+}
+
+.account-card p {
+    min-height: 75px;
+}
+
+/* Destination Card Images */
+.destination-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* Card and Feature Headings */
+.card-content h3,
+.feature-item h3 {
+    color: rgb(8, 127, 140);
+}
+
+/* Feature Item */
+.feature-item {
+    background-color: rgb(240, 248, 248);
+    border-left: 4px solid rgb(21, 145, 155);
+    padding: 15px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: rgb(8, 127, 140);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 1px solid rgb(8, 127, 140);
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: rgb(5, 95, 105);
+    color: rgb(255, 255, 255);
+}
+
+/* Page Links */
+.page-links {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.page-links a {
+    color: rgb(8, 127, 140);
+}
+
+.page-links a:hover {
+    color: rgb(5, 95, 105);
+}
+
+/* Form Page */
+.form-page {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Form Section */
+.form-section {
+    padding: 20px;
+}
+
+.form-section legend {
+    color: rgb(8, 127, 140);
+    font-weight: bold;
+}
+
+/* Form Grid */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+/* Form Field */
+.form-field {
+    min-width: 0;
+    margin-bottom: 8px;
+}
+
+.form-field.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Form Actions */
+.form-actions {
+    text-align: center;
+    margin: 25px 0;
+}
+
+/* Footer */
+.site-footer {
+    background-color: rgb(240, 248, 248);
+    color: rgb(51, 51, 51);
+    text-align: center;
+    padding: 25px 0;
+}
+
+.site-footer a {
+    color: rgb(8, 127, 140);
+}
+
+.site-footer a:hover {
+    color: rgb(5, 95, 105);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+        padding-top: 110px;
+    }
+
+    .container,
+    .form-page {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .fixed-heading {
+        width: 100%;
+    }
+
+    .fixed-heading h1,
+    .fixed-heading h2 {
+        font-size: 24px;
+    }
+
+    .fixed-heading .navigation {
+        text-align: center;
+        margin: 0 5px 10px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    fieldset {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    form fieldset {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .flex-container {
+        width: 100%;
+    }
+
+    .destination-grid,
+    .feature-grid,
+    .account-grid,
+    .form-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .hero-text,
+    .hero-art {
+        width: 100%;
+    }
+
+    .account-card {
+        min-height: 0;
+    }
+
+    .account-card p {
+        min-height: 0;
+    }
+
+    .panel,
+    .account-card,
+    .form-section,
+    .destination-card {
+        padding: 12px;
+    }
+
+    table {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    td {
+        padding: 5px;
+        overflow-wrap: anywhere;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="password"],
+    input[type="date"],
+    input[type="time"],
+    input[type="url"],
+    input[type="file"],
+    select,
+    textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+```
