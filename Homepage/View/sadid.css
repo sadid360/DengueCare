@@ -1,0 +1,319 @@
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* General Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 248, 248);
+    color: rgb(51, 51, 51);
+    margin: 20px;
+    padding-top: 100px;
+    font-size: 16px;
+}
+
+/* Fixed Heading and Navigation */
+.fixed-heading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(240, 248, 248);
+    color: rgb(51, 51, 51);
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgb(180, 190, 190);
+}
+
+/* Fixed Main Heading */
+.fixed-heading h1,
+.fixed-heading h2 {
+    color: rgb(8, 127, 140);
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0 0;
+}
+
+/* Fixed Subtitle */
+.fixed-heading p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 10px;
+}
+
+/* Fixed Navigation Links */
+.fixed-heading .navigation {
+    display: block;
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 20px 10px 0;
+}
+
+/* General Links */
+a {
+    color: rgb(8, 127, 140);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+    transition: color 0.3s;
+}
+
+/* Link Hover */
+a:hover {
+    color: rgb(230, 57, 70);
+    text-decoration: underline;
+}
+
+/* Headings */
+h1 {
+    color: rgb(8, 127, 140);
+}
+
+h2 {
+    color: rgb(21, 145, 155);
+}
+
+/* Paragraph */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Form Position and Responsive Width */
+form {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* Fieldset */
+fieldset {
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(180, 220, 220);
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(210, 220, 220);
+    overflow: auto;
+    overflow-wrap: anywhere;
+}
+
+/* Legend */
+legend {
+    color: rgb(8, 127, 140);
+    font-size: 18px;
+    font-weight: bold;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/* Table Cells */
+td {
+    padding: 8px;
+    overflow-wrap: anywhere;
+    vertical-align: middle;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-size: 15px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+input[type="time"],
+input[type="url"],
+input[type="file"],
+select,
+textarea {
+    display: block;
+    width: 95%;
+    max-width: 100%;
+    min-width: 0;
+    padding: 8px;
+    border: 1px solid rgb(180, 190, 195);
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* Input Focus */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="file"]:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid rgb(143, 188, 143);
+    outline-offset: 1px;
+}
+
+/* Checkbox and Radio Buttons */
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 5px;
+}
+
+/* Full Name Field */
+#fullname {
+    max-width: 100%;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+    overflow: auto;
+}
+
+/* Submit and Reset Buttons */
+input[type="submit"],
+input[type="reset"] {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: rgb(8, 127, 140);
+    color: rgb(255, 255, 255);
+}
+
+/* Reset Button */
+input[type="reset"] {
+    background-color: rgb(220, 230, 230);
+    color: rgb(51, 51, 51);
+}
+
+/* Submit Button Hover and Active */
+input[type="submit"]:hover {
+    background-color: rgb(5, 95, 105);
+}
+
+input[type="submit"]:active {
+    background-color: rgb(3, 75, 85);
+    transform: translateY(2px);
+}
+
+/* Reset Button Hover and Active */
+input[type="reset"]:hover {
+    background-color: rgb(190, 205, 205);
+}
+
+input[type="reset"]:active {
+    background-color: rgb(170, 190, 190);
+    transform: translateY(2px);
+}
+
+/* Horizontal Line */
+hr {
+    border: 1px solid rgb(21, 145, 155);
+}
+
+/* Images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Flexbox */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 10px;
+        padding-top: 110px;
+    }
+
+    .fixed-heading h1,
+    .fixed-heading h2 {
+        font-size: 24px;
+    }
+
+    .fixed-heading .navigation {
+        text-align: center;
+        margin: 0 5px 10px;
+    }
+
+    form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    fieldset {
+        width: 100%;
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    table {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    td {
+        padding: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="password"],
+    input[type="date"],
+    input[type="time"],
+    input[type="url"],
+    input[type="file"],
+    select,
+    textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+}
