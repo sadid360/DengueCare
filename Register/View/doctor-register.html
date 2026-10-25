@@ -4,63 +4,82 @@
 
 <head>
     <title>DengueCare - Doctor Registration</title>
+    
+    <link rel="stylesheet" href="sadid.css">
 </head>
 
 <body>
 
-    <center>
-        <h2>Doctor Registration</h2>
-    </center>
+    <div class="fixed-heading">
+        <center>
+            <h2>Doctor Registration</h2>
+        </center>
 
-    <p align="center">
-        <a href="home.html">Registration Options</a> |
-        <a href="../../Homepage/View/home.html">Home</a> |
-        <a href="../../Login/View/home.html">Login</a>
-    </p>
+        <p class="navigation" align="right">
+            <a href="home.html">Registration Options</a> |
+            <a href="../../Homepage/View/home.html">Home</a> |
+            <a href="../../Login/View/home.html">Login</a>
+        </p>
+    </div>
 
     <form action="#" method="post">
 
         <fieldset>
             <legend>Personal Information</legend>
 
-            <p>
-                <label for="fullname">Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
-            </p>
+            <table>
+                <tr>
+                    <td><label for="fullname">Name:</label></td>
+                    <td>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </td>
+                </tr>
 
-            <p>
-                <label>Gender:</label>
+                <tr>
+    <td>Gender:</td>
+    <td>
+        <table>
+            <tr>
+                <td>
+                    <input type="radio" id="gender_male"
+                           name="gender" value="Male">
+                    <label for="gender_male">Male</label>
+                </td>
+                <td>
+                    <input type="radio" id="gender_female"
+                           name="gender" value="Female">
+                    <label for="gender_female">Female</label>
+                </td>
+                <td>
+                    <input type="radio" id="gender_other"
+                           name="gender" value="Other">
+                    <label for="gender_other">Other</label>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td>
+                        <input type="date" id="dob" name="dob">
+                    </td>
+                </tr>
 
-                <input type="radio" id="gender_male" name="gender" value="Male">
-                <label for="gender_male">Male</label>
+                <tr>
+                    <td><label for="phone">Phone:</label></td>
+                    <td>
+                        <input type="tel" id="phone" name="phone" required>
+                    </td>
+                </tr>
 
-                <input type="radio" id="gender_female" name="gender" value="Female">
-                <label for="gender_female">Female</label>
-
-                <input type="radio" id="gender_other" name="gender" value="Other">
-                <label for="gender_other">Other</label>
-            </p>
-
-            <p>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </p>
-
-            <p>
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob">
-            </p>
-
-            <p>
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </p>
-
-            <p>
-                <label for="address">Address:</label>
-                <textarea id="address" name="address" rows="3" cols="30"></textarea>
-            </p>
-
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td>
+                        <textarea id="address" name="address" rows="3" cols="30"></textarea>
+                    </td>
+                </tr>
+            </table>
         </fieldset>
 
         <br>
@@ -68,73 +87,95 @@
         <fieldset>
             <legend>Professional Information</legend>
 
-            <p>
-                <label for="degree">Medical Degree:</label>
-                <select id="degree" name="degree" required>
-                    <option value="">Select</option>
-                    <option>MBBS</option>
-                    <option>BDS</option>
-                    <option>Other</option>
-                </select>
-            </p>
+            <table>
+                <tr>
+                    <td><label for="degree">Medical Degree:</label></td>
+                    <td>
+                        <select id="degree" name="degree" required>
+                            <option value="">Select</option>
+                            <option>MBBS</option>
+                            <option>BDS</option>
+                            <option>Other</option>
+                        </select>
+                    </td>
+                </tr>
 
-            <p>
-                <label for="specialization">Specialization:</label>
-                <input type="text" id="specialization" name="specialization" required>
-            </p>
+                <tr>
+                    <td><label for="specialization">Specialization:</label></td>
+                    <td>
+                        <input type="text" id="specialization" name="specialization" required>
+                    </td>
+                </tr>
 
-            <p>
-                <label for="bmdc">BMDC Registration Number:</label>
-                <input type="text" id="bmdc" name="bmdc" required>
-            </p>
+                <tr>
+                    <td><label for="bmdc">BMDC Registration Number:</label></td>
+                    <td>
+                        <input type="text" id="bmdc" name="bmdc" required>
+                    </td>
+                </tr>
 
-            <p>
-                <label for="experience">Years of Experience:</label>
-                <input type="number" id="experience" name="experience">
-            </p>
+                <tr>
+                    <td><label for="experience">Years of Experience:</label></td>
+                    <td>
+                        <input type="number" id="experience" name="experience">
+                    </td>
+                </tr>
 
-            <p>
-                <label for="institution">Medical Institution:</label>
-                <input type="text" id="institution" name="institution">
-            </p>
-
+                <tr>
+                    <td><label for="institution">Medical Institution:</label></td>
+                    <td>
+                        <input type="text" id="institution" name="institution">
+                    </td>
+                </tr>
+            </table>
         </fieldset>
 
         <br>
 
         <fieldset>
-            <legend>Workplace & Availability</legend>
+            <legend>Workplace &amp; Availability</legend>
 
-            <p>
-                <label for="workplace">Hospital / Clinic:</label>
-                <input type="text" id="workplace" name="workplace" required>
-            </p>
+            <table>
+                <tr>
+                    <td><label for="workplace">Hospital / Clinic:</label></td>
+                    <td>
+                        <input type="text" id="workplace" name="workplace" required>
+                    </td>
+                </tr>
 
-            <p>
-                <label for="chamber">Chamber Address:</label>
-                <textarea id="chamber" name="chamber" rows="3" cols="30"></textarea>
-            </p>
+                <tr>
+                    <td><label for="chamber">Chamber Address:</label></td>
+                    <td>
+                        <textarea id="chamber" name="chamber" rows="3" cols="30"></textarea>
+                    </td>
+                </tr>
 
-            <p>
-                <label for="consultation">Consultation Type:</label>
-                <select id="consultation" name="consultation">
-                    <option value="">Select</option>
-                    <option>In-person</option>
-                    <option>Online</option>
-                    <option>Both</option>
-                </select>
-            </p>
+                <tr>
+                    <td><label for="consultation">Consultation Type:</label></td>
+                    <td>
+                        <select id="consultation" name="consultation">
+                            <option value="">Select</option>
+                            <option>In-person</option>
+                            <option>Online</option>
+                            <option>Both</option>
+                        </select>
+                    </td>
+                </tr>
 
-            <p>
-                <label for="days">Available Days:</label>
-                <input type="text" id="days" name="days">
-            </p>
+                <tr>
+                    <td><label for="days">Available Days:</label></td>
+                    <td>
+                        <input type="text" id="days" name="days">
+                    </td>
+                </tr>
 
-            <p>
-                <label for="hours">Available Hours:</label>
-                <input type="text" id="hours" name="hours">
-            </p>
-
+                <tr>
+                    <td><label for="hours">Available Hours:</label></td>
+                    <td>
+                        <input type="text" id="hours" name="hours">
+                    </td>
+                </tr>
+            </table>
         </fieldset>
 
         <br>
@@ -142,16 +183,21 @@
         <fieldset>
             <legend>Account Details</legend>
 
-            <p>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-            </p>
+            <table>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td>
+                        <input type="text" id="username" name="username" required>
+                    </td>
+                </tr>
 
-            <p>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </p>
-
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td>
+                        <input type="password" id="password" name="password" required>
+                    </td>
+                </tr>
+            </table>
         </fieldset>
 
         <br>
@@ -170,14 +216,12 @@
                 <input type="submit" value="Submit">
                 <input type="reset" value="Reset">
             </center>
-
         </fieldset>
 
     </form>
 
     <p align="center">
         Doctor details should be verified before account activation.
-        Backend support is required.
     </p>
 
 </body>
