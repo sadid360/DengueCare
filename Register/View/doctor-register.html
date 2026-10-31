@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DengueCare - Doctor Registration</title>
+    <link rel="stylesheet" href="sadid.css">
+</head>
+
+<body>
+
+    <div class="fixed-heading">
+        <center>
+            <h2>Doctor Registration</h2>
+        </center>
+
+        <p class="navigation" align="right">
+            <a href="home.html">Registration Options</a> |
+            <a href="../../Homepage/View/home.html">Home</a> |
+            <a href="../../Login/View/home.html">Login</a>
+        </p>
+    </div>
+
+    <form id="doctorForm" action="#" method="post"
+          onsubmit="return doctorValidation()"
+          onreset="clearDoctorMessages()">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <table>
+                <tr>
+                    <td><label for="fullname">Name:</label></td>
+                    <td>
+                        <input type="text" id="fullname" name="fullname"
+                               onkeyup="checkName()">
+                        <span id="name-error"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="Male"
+                               onchange="checkGender()"> Male
+
+                        <input type="radio" name="gender" value="Female"
+                               onchange="checkGender()"> Female
+
+                        <input type="radio" name="gender" value="Other"
+                               onchange="checkGender()"> Other
+
+                        <span id="gender-error"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="dob">Date of Birth:</label></td>
+                    <td>
+                        <input type="date" id="dob" name="dob"
+                               max="2026-10-31"
+                               onchange="checkDOB()">
+                        <span id="dob-error"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="phone">Phone:</label></td>
+                    <td>
+                        <input type="tel" id="phone" name="phone"
+                               onkeyup="checkPhone()">
+                        <span id="phone-error"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td>
+                        <textarea id="address" name="address"
+                                  rows="3" cols="30"
+                                  onkeyup="checkAddress()"></textarea>
+                        <span id="address-error"></span>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Professional Information</legend>
+
+            <table>
+                <tr>
+                    <td><label for="degree">Medical Degree:</label></td>
+                    <td>
+                        <select id="degree" name="degree"
+                                onchange="checkDegree()">
+                            <option value="">Select</option>
+                            <option value="MBBS">MBBS</option>
+                            <option value="BDS">BDS</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <span id="degree-error"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="specialization">Specialization:</label></td>
+                    <td>
+                        <input type="text" id="specialization"
+                               name="specialization"
+                               onkeyup="checkSpecialization()">
+                        <span id="specialization-error"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="bmdc">BMDC Registration Number:</label></td>
+                    <td>
+                        <input type="text" id="bmdc" name="bmdc"
+                               onkeyup="checkBMDC()">
+                        <span id="bmdc-error"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="experience">Years of Experience:</label></td>
+                    <td>
+                        <input type="number" id="experience"
+                               name="experience" min="0"
+                               onkeyup="checkExperience()">
+                        <span id="experience-error"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="institution">Medical Institution:</label></td>
+                    <td>
+                        <input type="text" id="institution"
+                               name="institution"
+                               onkeyup="checkInstitution()">
+                        <span id="institution-error"></span>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Workplace &amp; Availability</legend>
+
+            <table>
+                <tr>
+                    <td><label for="workplace">Hospital / Clinic:</label></td>
+                    <td>
+                        <input type="text" id="workplace" name="workplace"
+                               onkeyup="checkWorkplace()">
+                        <span id="workplace-error"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="chamber">Chamber Address:</label></td>
+                    <td>
+                        <textarea id="chamber" name="chamber"
+                                  rows="3" cols="30"
+                                  onkeyup="checkChamber()"></textarea>
+                        <span id="chamber-error"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="consultation">Consultation Type:</label></td>
+                    <td>
+                        <select id="consultation" name="consultation"
+                                onchange="checkConsultation()">
+                            <option value="">Select</option>
+                            <option value="In-person">In-person</option>
+                            <option value="Online">Online</option>
+                            <option value="Both">Both</option>
+                        </select>
+                        <span id="consultation-error"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="days">Available Days:</label></td>
+                    <td>
+                        <input type="text" id="days" name="days"
+                               onkeyup="checkDays()">
+                        <span id="days-error"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="hours">Available Hours:</label></td>
+                    <td>
+                        <input type="text" id="hours" name="hours"
+                               onkeyup="checkHours()">
+                        <span id="hours-error"></span>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Account Details</legend>
+
+            <table>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td>
+                        <input type="text" id="username" name="username"
+                               onkeyup="checkUsername()">
+                        <span id="username-error"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td>
+                        <input type="password" id="password" name="password"
+                               onkeyup="checkPassword()">
+                        <span id="password-error"></span>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Confirmation</legend>
+
+            <p>
+                <input type="checkbox" id="declaration"
+                       name="declaration"
+                       onchange="checkDeclaration()">
+
+                <label for="declaration">
+                    I confirm that the information provided is accurate.
+                </label>
+
+                <span id="declaration-error"></span>
+            </p>
+
+            <center>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </center>
+        </fieldset>
+
+        <p id="doctor-message" class="validation-message"></p>
+
+    </form>
+
+    <p align="center">
+        Doctor details should be verified before account activation.
+    </p>
+
+    <script src="doctor-register.js"></script>
+
+</body>
+</html>

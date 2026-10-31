@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DengueCare - Admin Access Request</title>
+</head>
+
+<body>
+
+    <center>
+        <h2>Admin Access Request</h2>
+    </center>
+
+    <p align="center">
+        <a href="home.html">Registration Options</a> |
+        <a href="../../Homepage/View/home.html">Home</a> |
+        <a href="../../Login/View/home.html">Login</a>
+    </p>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Applicant Information</legend>
+
+            <p>
+                <label for="fullname">Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+
+            <p>
+                <label for="email">Official Email:</label>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </p>
+
+            <p>
+                <label for="organization">Organization:</label>
+                <input type="text" id="organization" name="organization" required>
+            </p>
+
+            <p>
+                <label for="designation">Current Designation:</label>
+                <input type="text" id="designation" name="designation" required>
+            </p>
+
+            <p>
+                <label for="employeeid">Employee ID:</label>
+                <input type="text" id="employeeid" name="employeeid">
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Access Request</legend>
+
+            <p>
+                <label for="role">Requested Role:</label>
+                <select id="role" name="role" required>
+                    <option value="">Select</option>
+                    <option>Data Manager</option>
+                    <option>User Manager</option>
+                    <option>System Administrator</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="reason">Reason for Request:</label>
+                <textarea id="reason" name="reason" rows="3" cols="30" required></textarea>
+            </p>
+
+            <p>
+                <label for="document">Supporting Document:</label>
+                <input type="file" id="document" name="document">
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Confirmation</legend>
+
+            <p>
+                <input type="checkbox" id="declaration" name="declaration" required>
+                <label for="declaration">
+                    I confirm that the information provided is accurate.
+                </label>
+            </p>
+
+            <center>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </center>
+
+        </fieldset>
+
+    </form>
+
+    <p align="center">
+        Admin access is restricted and must be approved by an authorized administrator.
+    </p>
+
+</body>
+</html>

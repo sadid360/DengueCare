@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Worker Registration - DengueCare</title>
+</head>
+<body>
+    <center>
+        <h2>DengueCare - Health Worker Registration</h2>
+    </center>
+    <p align="center">
+        <a href="home.html">Registration Options</a> |
+        <a href="../../Homepage/View/home.html">Home</a> |
+        <a href="../../Login/View/home.html">Login</a>
+    </p>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table>
+                <tr>
+                    <td><label for="fullname">Full Name:</label></td>
+                    <td><input type="text" id="fullname" name="fullname" required></td>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="Other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                    <td><label for="phone">Phone:</label></td>
+                    <td><input type="tel" id="phone" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Present Address:</label></td>
+                    <td><textarea id="address" name="address" rows="3" cols="30"></textarea></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Work Information</legend>
+            <table>
+                <tr>
+                    <td><label for="designation">Designation:</label></td>
+                    <td>
+                        <select id="designation" name="designation" required>
+                            <option value=""> Select </option>
+                            <option value="Health Assistant">Health Assistant</option>
+                            <option value="Community Health Worker">Community Health Worker</option>
+                            <option value="Field Supervisor">Field Supervisor</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                    <td><label for="organization">Organization:</label></td>
+                    <td><input type="text" id="organization" name="organization" required></td>
+                </tr>
+                <tr>
+                    <td><label for="workerid">Employee ID:</label></td>
+                    <td><input type="text" id="workerid" name="workerid" required></td>
+                    <td><label for="education">Education / Training:</label></td>
+                    <td><input type="text" id="education" name="education" required></td>
+                </tr>
+                <tr>
+                    <td><label for="experience">Years of Experience:</label></td>
+                    <td><input type="number" id="experience" name="experience" min="0" max="50" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Assigned Area (area where you will update dengue cases)</legend>
+            <table>
+                <tr>
+                    <td><label for="division">Division:</label></td>
+                    <td>
+                        <select id="division" name="division" required>
+                            <option value=""> Select </option>
+                            <option value="Dhaka">Dhaka</option>
+                            <option value="Chattogram">Chattogram</option>
+                            <option value="Rajshahi">Rajshahi</option>
+                            <option value="Khulna">Khulna</option>
+                            <option value="Barishal">Barishal</option>
+                            <option value="Sylhet">Sylhet</option>
+                            <option value="Rangpur">Rangpur</option>
+                            <option value="Mymensingh">Mymensingh</option>
+                        </select>
+                    </td>
+                    <td><label for="district">District:</label></td>
+                    <td><input type="text" id="district" name="district" required></td>
+                </tr>
+                <tr>
+                    <td><label for="area">Upazila / Ward / Area:</label></td>
+                    <td><input type="text" id="area" name="area" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Account Details</legend>
+            <table>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" name="username" required></td>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="confirm">Confirm Password:</label></td>
+                    <td><input type="password" id="confirm" name="confirm" required></td>
+                    <td><label for="question">Security Question:</label></td>
+                    <td>
+                        <select id="question" name="question" required>
+                            <option value=""> Select </option>
+                            <option value="pet">What was the name of your first pet?</option>
+                            <option value="school">What was the name of your primary school?</option>
+                            <option value="city">In which city were you born?</option>
+                            <option value="friend">What is your best friend's name?</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="answer">Answer:</label></td>
+                    <td><input type="text" id="answer" name="answer" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Confirmation</legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="agree1" name="agree1" required>
+                        <label for="agree1">I confirm that my organization and employee ID are correct.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="agree2" name="agree2" required>
+                        <label for="agree2">I understand my account will be activated only after Admin approval.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="agree3" name="agree3" required>
+                        <label for="agree3">I agree to keep patient and case information confidential.</label>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <center>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </center>
+        </fieldset>
+    </form>
+    <p align="center">
+        Health Worker accounts are activated after Admin approval.
+        Account creation requires backend support.
+    </p>
+    <p align="center">
+        <a href="../../Homepage/View/home.html">Back to Home</a> |
+        <a href="../../Login/View/home.html">Login</a>
+    </p>
+</body>
+</html>

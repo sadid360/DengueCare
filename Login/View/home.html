@@ -4,26 +4,43 @@
 
 <head>
     <title>DengueCare - Login</title>
+<<<<<<< HEAD
+=======
+    <link rel="stylesheet" href="sadid.css">
+>>>>>>> sadid-lab-3
 </head>
 
 <body>
 
+<<<<<<< HEAD
     <center>
         <h1>DengueCare Login</h1>
     </center>
 
     <p align="center">
+=======
+    <h2 align="center">DengueCare Login</h2>
+
+    <p align="right">
+>>>>>>> sadid-lab-3
         <a href="../../Homepage/View/home.html">Home</a> |
         <a href="../../Register/View/home.html">Register</a>
     </p>
 
+<<<<<<< HEAD
     <hr>
 
     <form action="#" method="post">
+=======
+    <form id="loginForm" action="#" method="post"
+          onsubmit="return loginValidation()"
+          onreset="clearLoginMessages()">
+>>>>>>> sadid-lab-3
 
         <fieldset>
             <legend>Account Details</legend>
 
+<<<<<<< HEAD
             <p>
                 <label for="username">Username or Email:</label>
                 <input type="text" id="username" name="username" required>
@@ -44,6 +61,55 @@
                     <option>Approved Admin</option>
                 </select>
             </p>
+=======
+            <table>
+
+                <tr>
+                    <td>
+                        <label for="username">Username or Email:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="username" name="username"
+                               onkeyup="checkUsername()">
+                        <span id="username-error"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="password">Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password"
+                               onkeyup="checkPassword()">
+                        <span id="password-error"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="role">Account Type:</label>
+                    </td>
+                    <td>
+                        <select id="role" name="role"
+                                onchange="checkRole()">
+
+                            <option value="">Select</option>
+                            <option value="Patient / User">Patient / User</option>
+                            <option value="Doctor">Doctor</option>
+                            <option value="Health Worker">Health Worker</option>
+                            <option value="Approved Admin">Approved Admin</option>
+
+                        </select>
+
+                        <span id="role-error"></span>
+                    </td>
+                </tr>
+
+            </table>
+
+            <br>
+>>>>>>> sadid-lab-3
 
             <center>
                 <input type="submit" value="Login">
@@ -52,14 +118,32 @@
 
         </fieldset>
 
+<<<<<<< HEAD
+=======
+        <p id="login-message"></p>
+
+>>>>>>> sadid-lab-3
     </form>
 
     <p align="center">
         Need admin access?
+<<<<<<< HEAD
         <a href="../../Register/View/admin-access-request.html">Request Admin Access</a>
     </p>
 
     <p align="center">Authentication requires backend support.</p>
+=======
+        <a href="../../Register/View/admin-access-request.html">
+            Request Admin Access
+        </a>
+    </p>
+
+    <p align="center">
+        Authentication requires backend support.
+    </p>
+
+    <script src="login.js"></script>
+>>>>>>> sadid-lab-3
 
 </body>
 </html>
